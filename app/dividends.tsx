@@ -89,19 +89,19 @@ const DividendByMonth: React.FC<Props> = ({ data }) => {
           {dividendsByYear.toReversed().map((dividend, index) => (
             // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             <TableRow key={index}>
-              <TableCell>{dividend.year}</TableCell>
-              <TableCell>{dividend.months["01"]}</TableCell>
-              <TableCell>{dividend.months["02"]}</TableCell>
-              <TableCell>{dividend.months["03"]}</TableCell>
-              <TableCell>{dividend.months["04"]}</TableCell>
-              <TableCell>{dividend.months["05"]}</TableCell>
-              <TableCell>{dividend.months["06"]}</TableCell>
-              <TableCell>{dividend.months["07"]}</TableCell>
-              <TableCell>{dividend.months["08"]}</TableCell>
-              <TableCell>{dividend.months["09"]}</TableCell>
-              <TableCell>{dividend.months["10"]}</TableCell>
-              <TableCell>{dividend.months["11"]}</TableCell>
-              <TableCell>{dividend.months["12"]}</TableCell>
+              <TableCell className="font-medium">{dividend.year}</TableCell>
+              <TableCell className="text-sm">{dividend.months["01"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["02"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["03"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["04"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["05"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["06"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["07"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["08"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["09"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["10"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["11"]}</TableCell>
+              <TableCell className="text-sm">{dividend.months["12"]}</TableCell>
             </TableRow>
           ))}
         </TableBody>
